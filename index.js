@@ -10,7 +10,7 @@ const init = () => {
       type: 'list',
       name: 'action',
       message: 'What would you like to do?',
-      choices:['Add Department', 'Add Role', 'Add Employee', 'View Departments', 'View Roles','View Employees','Update Employees']
+      choices:['Add Department', 'Add Role', 'Add Employee', 'View Departments', 'View Roles','View Employees','Update Employee']
     }
   ])
   .then(({action}) => {
@@ -154,7 +154,8 @@ const viewEmployees = () => {
 }
 
 const updateEmployee = () => {
-  db,query('SELECT * FROM roles', (err, roles) => {
+  db.query('SELECT * FROM roles', (err, roles) => {
+    
     db.query('SELECT * FROM employees', (err, employees) => {
       prompt([
         {
