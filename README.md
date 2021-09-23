@@ -14,8 +14,15 @@
    npm i inquirer mysql2
 
   # usage
- 
-   Run on command line. Create a database in mySQL named employees_db to save to a mySQL database.
+  Create a database in mySQL named employees_db to save to a mySQL database.
+
+   Run the following command on command line.
+   
+      node server.js
+
+  Then you will be able to add departments, add roles, add employees, view departments, view roles, view employees, and update employees by following the prompts and hitting enter when you want to select or enter data.
+   
+  
 
   # license
 
@@ -23,7 +30,7 @@
 
   # tests
 
-   npm test
+  None
 
   # contributing
 
